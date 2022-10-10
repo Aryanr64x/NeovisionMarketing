@@ -44,11 +44,11 @@ const ClientWords = () => {
 
 
     return (
-        <div className="px-32 mt-40">
+        <div className=" px-2 sm:px-12 lg:px-32 mt-40">
             <h2 className="text-6xl text-center text-primary font-paytone text-shadow" id="client-words">
                 CLIENT WORDS
             </h2>
-            <div className="mt-16 grid grid-cols-2 gap-x-20">
+            <div className="mt-16 md:grid md:grid-cols-2 md:gap-x-20">
                 <motion.div  animate={{opacity: [0,1,0]}} transition={{duration: 4, repeat: 100 }} className="bg-white bg-opacity-30 ">
                     <div>
                         <img  className="w-full h-84" src={ (testimonials[counter]) ? (testimonials[counter].image) : 'baba' } alt="" />
@@ -68,11 +68,11 @@ const ClientWords = () => {
 
                     </div>
                 </motion.div>
-                <div className="flex flex-col   justify-center items-start">
-                    <h3 className="text-5xl   font-paytone text-shadow">
+                <div className="flex flex-col   justify-center  items-center md:items-start mt-16 md:mt-0">
+                    <h3 className="text-3xl sm:text-4xl lg:text-5xl  text-center md:text-left font-paytone text-shadow">
                         Trusted by <span className="text-primary"> numerous </span> business owners and contractors
                     </h3>
-                    <div className="mt-8 text-2xl font-bold">
+                    <div className="mt-8 text-xl md:text-xl font-bold">
                         Because I Like Happy Clients 😊
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div className="grid grid-cols-3 bg-primary py-20 px-32 mt-40">
+        <div className="md:grid md:grid-cols-3 bg-primary py-20 sm:px-12 lg:px-32 mt-40">
             <div className="col-span-1">
                 <div className="ml-1 text-2xl font-paytone text-shadow">
                     NEOVISION MARKETING
@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="cols-span-1">
                
             </div>
-            <div className="cols-span-1">
+            <div className="cols-span-1 mt-16 md:mt-0">
                 <a href="#client-words" className="rounded-full bg-white text-primary px-4 py-4 mr-4 font-bold text-lg"> Book A Call </a>
                 <a href="#client-words" className="rounded-full  border-white border-2 px-4 py-4 mr-2 font-bold text-lg hover:bg-white hover:text-primary transition-all duration-500"> Client Words </a>
             </div>
