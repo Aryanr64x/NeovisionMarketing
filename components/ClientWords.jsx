@@ -26,7 +26,7 @@ const ClientWords = () => {
             setCounter((counter) => counter+1);
             console.log("LOG EVENT")
            
-        }, 4000);
+        }, 7000);
 
         return ()=>{
             clearInterval(interval)
@@ -48,8 +48,8 @@ const ClientWords = () => {
             <h2 className="text-6xl text-center text-primary font-paytone text-shadow" id="client-words">
                 CLIENT WORDS
             </h2>
-            <div className="mt-16 md:grid md:grid-cols-2 md:gap-x-20">
-                <motion.div  animate={{opacity: [0,1,0]}} transition={{duration: 4, repeat: 100 }} className="bg-white bg-opacity-30 ">
+            <div  className="mt-16 md:grid md:grid-cols-2 md:gap-x-20">
+                <motion.div  animate={{opacity: [0,1,1,0]}} transition={{duration: 7, repeat: 100 }} className="bg-white bg-opacity-30 ">
                     <div>
                         <img  className="w-full h-84" src={ (testimonials[counter]) ? (testimonials[counter].image) : 'baba' } alt="" />
 

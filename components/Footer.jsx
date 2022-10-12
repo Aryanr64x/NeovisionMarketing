@@ -14,8 +14,8 @@ const Footer = () => {
             <div className="cols-span-1">
                
             </div>
-            <div className="cols-span-1 mt-16 md:mt-0 flex justify-center md:justify-start">
-                <a href="#client-words" className="rounded-full bg-white text-primary px-4 py-4 mr-4 font-bold text-lg"> Book A Call </a>
+            <div className="cols-span-1 mt-16 md:mt-0 flex justify-center md:justify-start items-center">
+                <a href="#bookacall" className="rounded-full bg-white text-primary px-4 py-4 mr-4 font-bold text-lg hover:opacity-80  transition-all duration-500" > Book A Call </a>
                 <a href="#client-words" className="rounded-full  border-white border-2 px-4 py-4 mr-2 font-bold text-lg hover:bg-white hover:text-primary transition-all duration-500"> Client Words </a>
             </div>
         </div>
