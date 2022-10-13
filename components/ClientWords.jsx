@@ -5,17 +5,17 @@ const ClientWords = () => {
         {
             image: '/clientfinal121.png',
             words: 'The great thing about working  Shivam is that he is not only friendly and helpful but also knowledgable and insightful',
-            person: 'Tony Stark, CEO of Stark Industries'
+            person: 'Chris Steck'
         },
         {
             image: '/clientfinal2.png',
-            words: 'The great thing about working  Shivam is that he is not only friendly and helpful but also knowledgable and insightful',
-            person: 'Tony Stark, CEO of Stark Industries'
+            words: 'It was an absoulute pleasure experience working with Mr Shivam. His expertise in this field really reflects in his work',
+            person: 'Tony Long'
         },
         {
             image: '/clientfinal3.png',
-            words: 'The great thing about working  Shivam is that he is not only friendly and helpful but also knowledgable and insightful',
-            person: 'Tony Stark, CEO of Stark Industries'
+            words: 'I have been fully statisfied by the help of Shivam for my small business . ',
+            person: 'Spencer White'
         }
 
     ]
@@ -49,7 +49,7 @@ const ClientWords = () => {
                 CLIENT WORDS
             </h2>
             <div  className="mt-16 md:grid md:grid-cols-2 md:gap-x-20">
-                <motion.div  animate={{opacity: [0,1,1,0]}} transition={{duration: 7, repeat: 100 }} className="bg-white bg-opacity-30 ">
+                <motion.div  animate={{opacity: [0,1,1,0]}} transition={{duration: 7, repeat: 100 }} className="bg-white bg-opacity-30 shadow-2xl " >
                     <div>
                         <img  className="w-full h-84" src={ (testimonials[counter]) ? (testimonials[counter].image) : 'baba' } alt="" />
 
