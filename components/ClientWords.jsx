@@ -44,7 +44,7 @@ const ClientWords = () => {
 
 
     return (
-        <div className=" px-2 sm:px-12 lg:px-32 mt-40">
+        <div className=" px-2 sm:px-12 lg:px-32 mt-48">
             <h2 className="text-6xl text-center text-primary font-paytone text-shadow" id="client-words">
                 CLIENT WORDS
             </h2>

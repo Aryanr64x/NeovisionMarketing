@@ -4,7 +4,7 @@ import { InlineWidget } from "react-calendly";
 const BookACall = ()=>{
     const [showModal,setShowModal] = useState(false)
     return (
-        <div className="calldiv mt-40  px-2 sm:px-24 lg:px-52 xl:px-80 flex flex-col justify-center  shadow-md py-8  relative" id="bookacall">
+        <div className="calldiv mt-48  px-2 sm:px-24 lg:px-52 xl:px-80 flex flex-col justify-center  shadow-md py-8  relative" id="bookacall">
              <h2  className="text-5xl text-center text-primary font-paytone text-shadow">
                 CONNECT WITH ME 
             </h2>
