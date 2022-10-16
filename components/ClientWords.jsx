@@ -21,6 +21,8 @@ const ClientWords = () => {
     ]
     const [counter, setCounter] = useState(0)
     useEffect(() => {
+
+        console.log("USE EFFECT HAS BEEN CALLED")
         const interval = setInterval(() => {
            
             setCounter((counter) => counter+1);
@@ -49,7 +51,7 @@ const ClientWords = () => {
                 CLIENT WORDS
             </h2>
             <div  className="mt-16 md:grid md:grid-cols-2 md:gap-x-20">
-                <motion.div  animate={{opacity: [0,1,1,0]}} transition={{duration: 7, repeat: 100 }} className="bg-white bg-opacity-30 shadow-2xl " >
+                <motion.div  initial={{ opacity: 0 }} animate={{opacity: [1,1,0]}} transition={{duration: 7, repeat: 100 }} className="bg-white bg-opacity-30 shadow-2xl " >
                     <div>
                         <img  className="w-full h-84" src={ (testimonials[counter]) ? (testimonials[counter].image) : 'baba' } alt="" />
 
