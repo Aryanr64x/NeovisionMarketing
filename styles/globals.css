@@ -48,3 +48,14 @@ body{
 
   }
   }
+
+
+#popup{
+  animation-name: 'pop';
+  animation-duration: 300ms;
+}
+
+@keyframes pop {
+  0% { opacity: 0; }
+  100% { opacity: 100%; }
+}

@@ -5,7 +5,7 @@ const Result = () => {
         <div>
 
             <div className=" px-4  md:px-36 lg:px-48 xl:px-60 mt-64">
-                <h2 className="text-6xl text-center text-primary font-paytone text-shadow" id="client-words">
+                <h2 className="text-6xl text-center text-primary font-paytone text-shadow" id="">
                     PROVEN RESULTS!
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 mt-16">

@@ -1,4 +1,7 @@
+import { useEffect } from "react";
+
 const Footer = () => {
+ 
     return (
         <div className="md:grid md:grid-cols-3 bg-primary py-20 sm:px-12 lg:px-32 mt-52">
             <div className="col-span-1 text-center md:text-left">
