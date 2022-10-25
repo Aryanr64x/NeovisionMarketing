@@ -1,47 +1,54 @@
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react';
-const ClientWords = () => {
+import { Carousel } from 'primereact/carousel';
+import 'primereact/resources/themes/lara-light-indigo/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
+
+
+const ClientWords = ({ clientword }) => {
     const testimonials = [
         {
-            image: '/clientfinal121.png',
-            words: 'The great thing about working  Shivam is that he is not only friendly and helpful but also knowledgable and insightful',
-            person: 'Chris Steck'
+            image: clientword.client1.image,
+            words: clientword.client1.quote,
+            person: clientword.client1.client
         },
         {
-            image: '/clientfinal2.png',
-            words: 'It was an absoulute pleasure experience working with Mr Shivam. His expertise in this field really reflects in his work',
-            person: 'Tony Long'
+            image: clientword.client2.image,
+            words: clientword.client2.quote,
+            person: clientword.client2.client
         },
         {
-            image: '/clientfinal3.png',
-            words: 'I have been fully statisfied by the help of Shivam for my small business . ',
-            person: 'Spencer White'
+            image: clientword.client3.image,
+            words: clientword.client3.quote,
+            person: clientword.client3.client
         }
 
     ]
-    const [counter, setCounter] = useState(0)
-    useEffect(() => {
-
-        console.log("USE EFFECT HAS BEEN CALLED")
-        const interval = setInterval(() => {
-           
-            setCounter((counter) => counter+1);
-            console.log("LOG EVENT")
-           
-        }, 7000);
-
-        return ()=>{
-            clearInterval(interval)
-        }
-    }, [])
 
 
-    useEffect(()=>{
-        if (counter > 2) {
-            console.log("THIS CODE HAS BEEN CALLED")
-            setCounter(0);
-        }
-    })
+    const template = (item) => {
+        return (
+            <div className="bg-white bg-opacity-30 shadow-2xl " >
+                <div>
+                    <img className="w-full h-84" src={(item.image) ? (item.image) : '/'} alt="Client Image" />
+                </div>
+                <div className="mt-10 px-8">
+                    <div className="text-6xl font-paytone text-primary">
+                        {' " '}
+                    </div>
+                    <div className="text-lg font-bold">
+                        {item.words}
+                    </div>
+                    <div className="mt-8 text-lg font-black pb-4">
+                        {item.person}
+                    </div>
+
+
+                </div>
+            </div>
+        )
+    }
 
 
 
@@ -50,32 +57,15 @@ const ClientWords = () => {
             <h2 className="text-6xl text-center text-primary font-paytone text-shadow" id="client-words">
                 CLIENT WORDS
             </h2>
-            <div  className="mt-16 md:grid md:grid-cols-2 md:gap-x-20">
-                <motion.div  initial={{ opacity: 0 }} animate={{opacity: [1,1,0]}} transition={{duration: 7, repeat: 100 }} className="bg-white bg-opacity-30 shadow-2xl " >
-                    <div>
-                        <img  className="w-full h-84" src={ (testimonials[counter]) ? (testimonials[counter].image) : 'baba' } alt="" />
+            <div className="mt-16 md:grid md:grid-cols-2 md:gap-x-20">
+                <Carousel value={testimonials} itemTemplate={template} circular={true} showIndicators={false}></Carousel>
 
-                    </div>
-                    <div className="mt-10 px-8">
-                        <div className="text-6xl font-paytone text-primary">
-                            {' " '}
-                        </div>
-                        <div className="text-lg font-bold">
-                            { (testimonials[counter]) ? (testimonials[counter].words) : 'baba'}
-                        </div>
-                        <div className="mt-8 text-lg font-black pb-4">
-                            {(testimonials[counter]) ? (testimonials[counter].person) : 'baba'}
-                        </div>
-
-
-                    </div>
-                </motion.div>
                 <div className="flex flex-col   justify-center  items-center md:items-start mt-16 md:mt-0">
                     <h3 className="text-3xl sm:text-4xl lg:text-5xl  text-center md:text-left font-paytone text-shadow">
-                        Trusted by <span className="text-primary"> numerous </span> business owners and contractors
+                        {clientword.mainheading}
                     </h3>
                     <div className="mt-8 text-xl md:text-xl font-bold">
-                        Because I Like Happy Clients 😊
+                        {clientword.subheading}
                     </div>
                 </div>
             </div>

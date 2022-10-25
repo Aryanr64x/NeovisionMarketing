@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 
-const Footer = () => {
+const Footer = ({ footer }) => {
  
     return (
         <div className="md:grid md:grid-cols-3 bg-primary py-20 sm:px-12 lg:px-32 mt-52">
             <div className="col-span-1 text-center md:text-left">
                 <div className="ml-1 text-2xl font-paytone text-shadow">
-                    NEOVISION MARKETING
+                    { footer.brandname }
                 </div>
                 <div className="flex mt-4 justify-center md:justify-start">
                 <a href="https://www.instagram.com/shivam_kumar_____21/">
@@ -27,8 +27,8 @@ const Footer = () => {
                
             </div>
             <div className="cols-span-1 mt-16 md:mt-0 flex justify-center md:justify-start items-center">
-                <a href="#bookacall" className="rounded-full bg-white text-primary px-4 py-4 mr-4 font-bold text-lg hover:opacity-80  transition-all duration-500" > Book A Call </a>
-                <a href="#client-words" className="rounded-full  border-white border-2 px-4 py-4 mr-2 font-bold text-lg hover:bg-white hover:text-primary transition-all duration-500"> Client Words </a>
+                <a href="#bookacall" className="rounded-full bg-white text-primary px-4 py-4 mr-4 font-bold text-lg hover:opacity-80  transition-all duration-500" > { footer.buttonleft } </a>
+                <a href="#client-words" className="rounded-full  border-white border-2 px-4 py-4 mr-2 font-bold text-lg hover:bg-white hover:text-primary transition-all duration-500"> { footer.buttonRight } </a>
             </div>
         </div>
     );

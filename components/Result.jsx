@@ -1,6 +1,6 @@
 import Tilt from 'react-parallax-tilt';
 
-const Result = () => {
+const Result = ({result}) => {
     return (
         <div>
 
@@ -12,32 +12,30 @@ const Result = () => {
                     <Tilt>
 
                         <div className="bg-white bg-opacity-30 shadow-sm rounded hover:shadow-2xl cursor-pointer transition-all duration-300  mt-16 md:mt-0">
-                            <img src="/result1final.png" className="w-full" />
+                            <img src={ result.result1.image } className="w-full" />
                             <div className="px-8">
                                 <div className="mt-4 text-xl font-black">
-                                    51 Job Oppurtunities in 30 days!
+                                    { result.result1.result_heading }
                                 </div>
                                 <div className="mt-8 pb-4 text-lg">
-                                    A top and reputed remodelling business achieved 51 leads ( job Oppurtunities )
-                                    in just 39 days through targeted faceboo ads !!
+                                    { result.result1.info }
                                 </div>
                             </div>
                         </div>
                     </Tilt>
                     <Tilt>
                         <div className="bg-white bg-opacity-30 shadow-sm rounded hover:shadow-2xl cursor-pointer transition-all duration-300 mt-16 md:mt-0">
-                            <img src="/result2final.png" className="w-full" />
+                            <img src={result.result2.image} className="w-full" />
                             <div className="px-8">
                                 <div className="mt-4 text-xl font-black">
-                                    39 Job Oppurtunities in 30 days!
+                                    { result.result2.result_heading }
                                 </div>
                                 <div className="mt-8 pb-4 text-lg">
-                                    A top and reputed remodelling business achieved 39 leads ( job Oppurtunities )
-                                    in just 30 days through targeted facebook ads !!
+                                    { result.result2.info }
                                 </div>
                             </div>
                         </div>
-                    </Tilt>
+                    </Tilt> 
                 </div>
             </div>
         </div>

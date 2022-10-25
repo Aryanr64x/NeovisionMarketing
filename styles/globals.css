@@ -13,7 +13,6 @@ body{
 
 
 .hero{
-  background-image: url('https://i.ibb.co/16djTxC/herobglarge-min.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -31,7 +30,7 @@ body{
 }
 
 .calldiv{
-  background-image: url('https://i.ibb.co/j6FHw3T/callbg-min2.jpg');
+  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
