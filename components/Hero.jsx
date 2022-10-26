@@ -16,7 +16,7 @@ const Hero = ({ hero }) => {
                 <div className="min-h-screen  flex flex-col justify-between items-stretch">
                     <div className="pt-8  px-2 sm:px-12 lg:px-32">
                         <span className="ml-1  text-primary text-2xl font-paytone text-shadow ">
-                            NEOVISION MARKETING
+                            {hero.websitename}
                         </span>
                     </div>
                     <div className="lg:grid lg:grid-cols-3  px-2 sm:px-12 lg:px-32">

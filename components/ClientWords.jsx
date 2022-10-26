@@ -29,7 +29,7 @@ const ClientWords = ({ clientword }) => {
 
     const template = (item) => {
         return (
-            <div className="bg-white bg-opacity-30 shadow-2xl " >
+            <div className="bg-white bg-opacity-30 shadow-2xl rounded-xl" >
                 <div>
                     <img className="w-full h-84" src={(item.image) ? (item.image) : '/'} alt="Client Image" />
                 </div>

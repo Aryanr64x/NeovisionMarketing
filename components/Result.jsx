@@ -11,8 +11,8 @@ const Result = ({result}) => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 mt-16">
                     <Tilt>
 
-                        <div className="bg-white bg-opacity-30 shadow-sm rounded hover:shadow-2xl cursor-pointer transition-all duration-300  mt-16 md:mt-0">
-                            <img src={ result.result1.image } className="w-full" />
+                        <div className="bg-white h-full bg-opacity-30 shadow-sm rounded-xl hover:shadow-2xl cursor-pointer transition-all duration-300  mt-16 md:mt-0">
+                            <img src={ result.result1.image } className="w-full rounded-t-xl" />
                             <div className="px-8">
                                 <div className="mt-4 text-xl font-black">
                                     { result.result1.result_heading }
@@ -24,8 +24,8 @@ const Result = ({result}) => {
                         </div>
                     </Tilt>
                     <Tilt>
-                        <div className="bg-white bg-opacity-30 shadow-sm rounded hover:shadow-2xl cursor-pointer transition-all duration-300 mt-16 md:mt-0">
-                            <img src={result.result2.image} className="w-full" />
+                        <div className="bg-white h-full bg-opacity-30 shadow-sm rounded-xl hover:shadow-2xl cursor-pointer transition-all duration-300 mt-16 md:mt-0">
+                            <img src={result.result2.image} className="w-full rounded-t-xl" />
                             <div className="px-8">
                                 <div className="mt-4 text-xl font-black">
                                     { result.result2.result_heading }
